@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>877</width>
+    <height>646</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QLineEdit" name="lineEditSlaveAddress">
+        <property name="text">
+         <string>6f</string>
+        </property>
+        <property name="placeholderText">
+         <string>Slave Address e.g. 6f</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineEditPortName">
+        <property name="text">
+         <string>ttyUSB0</string>
+        </property>
+        <property name="placeholderText">
+         <string>Por name e.g. ttyUSB0</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButtonConnect">
+        <property name="text">
+         <string>Connect</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButtonAvailablePorts">
+        <property name="text">
+         <string>Available Ports</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tabDisplay">
+       <attribute name="title">
+        <string>Display</string>
+       </attribute>
+       <widget class="QPushButton" name="pushButtonDisplayText">
+        <property name="geometry">
+         <rect>
+          <x>9</x>
+          <y>45</y>
+          <width>80</width>
+          <height>24</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Display</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEditDisplayText">
+        <property name="geometry">
+         <rect>
+          <x>100</x>
+          <y>50</y>
+          <width>261</width>
+          <height>23</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButtonDefaultDisplay">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>130</y>
+          <width>96</width>
+          <height>24</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Default Display</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButtonDisplayMoveRight">
+        <property name="geometry">
+         <rect>
+          <x>240</x>
+          <y>130</y>
+          <width>91</width>
+          <height>24</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Move Right</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButtonDisplayMoveLeft">
+        <property name="geometry">
+         <rect>
+          <x>130</x>
+          <y>130</y>
+          <width>91</width>
+          <height>24</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Move Left</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tabZones">
+       <attribute name="title">
+        <string>Zones</string>
+       </attribute>
+       <widget class="QCheckBox" name="checkBoxToggle">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>30</y>
+          <width>426</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Turn On</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButtonRandomZoneOn">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>80</y>
+          <width>80</width>
+          <height>24</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Random ON</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButtonZoneOperate">
+        <property name="geometry">
+         <rect>
+          <x>90</x>
+          <y>30</y>
+          <width>80</width>
+          <height>24</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Operate</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPlainTextEdit" name="plainTextEditLog"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>877</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
